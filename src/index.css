@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.red {
+    color: red;
+}
+.gray {
+    color: rgb(120, 119, 119);
+}
+
+@font-face {
+    font-family: firaCode;
+    src: url(../FiraCode-VariableFont_wght.ttf);
+    font-weight: 300;
+}
+.firaCode {
+    font-family: firaCode;
+}
+
+* {
+    font-family: firaCode;
+}
+.letter {
+    display: inline;
+    z-index: 10;
+}
+.input {
+    caret-color: white;
+    caret-shape: underscore;
+}
+.green {
+    color: white;
+    animation-name: disappear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.lightGreen {
+    color: rgb(11, 11, 11);
+    animation-name: disappear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.darkGreen {
+    color: rgb(255, 255, 255);
+    animation-name: disappear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.red {
+    color: red;
+}
+.word {
+    color: rgb(120, 119, 119);
+}
+.darkWord {
+    color: rgb(77, 77, 77);
+}
+.lightWord {
+    color: rgb(151, 150, 92);
+}
+@keyframes disappear {
+    0% {
+    opacity:1;
+    }
+    50% {
+        opacity:1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity:0;
+    }
+}
